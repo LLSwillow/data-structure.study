@@ -1,4 +1,4 @@
-// 在任意位置插入节点
+// 在任意位置插入节点 区别于直接从头部插入数据的情况主要是需要寻找所需要的节点
 #include <iostream>
 using namespace std;
 struct Node

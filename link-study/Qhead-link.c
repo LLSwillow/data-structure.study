@@ -5,11 +5,11 @@ struct Node{
     int data;
     struct Node* next;
 };
-struct Node* head;//定义为全局变量 (或者定义为局部变量)
+struct Node* head;//定义为全局变量 (或者定义为局部变量，在代码实现上会存在差异)
 //插入函数
 void Insert(int x)
 {
-    struct Node* temp=(struct Node*)malloc(sizeof(struct Node));//malloc 的返回值为 void*，接受时必须强制类型转换
+    struct Node* temp=(struct Node*)malloc(sizeof(struct Node));//malloc 的返回值为 void*，接收时必须强制类型转换
     (*temp).data = x;
     temp->next=head;//当链表为空的时候 head 自然是NULL 该语句仍然成立 所以可以部分情况 写一个语句即可
     head = temp;
