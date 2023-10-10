@@ -1,3 +1,4 @@
+//用栈反转字符串
 #include <iostream>
 #include <stack>
 #include <cstring>
@@ -6,7 +7,7 @@ using namespace std;
 void Reverse(char C[], int n)
 {
     stack<char> S;
-
+    //入栈
     for (int i = 0; i < n; i++)
     {
         S.push(C[i]);
@@ -14,7 +15,7 @@ void Reverse(char C[], int n)
 
     for (int i = 0; i < n; i++)
     {
-        C[i] = S.top();
+        C[i] = S.top();//逆序了
         S.pop();
     }
 }
