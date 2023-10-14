@@ -28,8 +28,8 @@ int GetOperatorWeight(char op)
 }
 int HasHigher(char op1, char op2)
 {
-    if (op1 == '(' || op1 == '[' || op1 == '{')
-        return false;
+    /*if (op1 == '(' || op1 == '[' || op1 == '{')
+        return false;*/
     int op1Weight = GetOperatorWeight(op1);
     int op2Weight = GetOperatorWeight(op2);
     return op1Weight > op2Weight ? true : false;
