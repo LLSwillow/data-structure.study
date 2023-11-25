@@ -46,7 +46,7 @@ int main()
     Insert(root,17);
     Insert(root,2);
     Insert(root,5);
-    Insert(root,77);
+    Insert(root,1);
     vector<int> A;
     bool ans1=Inorder(root,A);
     bool ans2=IInorder(root);
